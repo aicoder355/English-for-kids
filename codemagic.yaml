@@ -1,1 +1,15 @@
+workflows:
+  english-start-kids:
+    name: English Start Kids APK
 
+    environment:
+      flutter: stable
+
+    scripts:
+      - cd flutter
+      - flutter pub get
+      - flutter analyze
+      - flutter build apk --release
+
+    artifacts:
+      - flutter/build/**/outputs/**/*.apk
