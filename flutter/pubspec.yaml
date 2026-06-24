@@ -1,0 +1,39 @@
+name: english_start_kids
+description: A complete offline-first Flutter application for kids aged 5-12 to learn English with a Russian interface.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  
+  # Persistence & Database layer
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+
+  # Navigation & Routing
+  go_router: ^12.1.3
+
+  # Audio Pronunciation
+  flutter_tts: ^3.8.3
+
+  # State Management
+  provider: ^6.0.5
+
+  # UI / Animation helper
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    - assets/images/

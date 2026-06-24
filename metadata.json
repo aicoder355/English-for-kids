@@ -1,0 +1,6 @@
+{
+  "name": "English Start Kids SRS",
+  "description": "Interactive Senior Architect developer portal and Software Requirements Specification (SRS) for the English Start Kids Android educational application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
