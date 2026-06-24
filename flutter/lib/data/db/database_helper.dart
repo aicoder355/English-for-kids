@@ -26,7 +26,7 @@ class DatabaseHelper {
 
     return await openDatabase(
       path,
-      version: 3,
+      version: 4,
       onCreate: _createDB,
       onUpgrade: _onUpgrade,
       onConfigure: _onConfigure,
@@ -56,7 +56,9 @@ class DatabaseHelper {
         star_balance $intType DEFAULT 0,
         daily_streak_count $intType DEFAULT 0,
         last_active_timestamp $intType,
-        four_digit_pin $textType DEFAULT '1234'
+        four_digit_pin $textType DEFAULT '1234',
+        current_lesson $textType DEFAULT 'animals',
+        is_onboarding_completed $intType DEFAULT 0
       )
     ''');
 
@@ -166,6 +168,19 @@ class DatabaseHelper {
     if (oldVersion < 3) {
       await db.execute('ALTER TABLE vocab_card ADD COLUMN example_sentence_en TEXT');
       await db.execute('ALTER TABLE vocab_card ADD COLUMN example_sentence_ru TEXT');
+    }
+
+    if (oldVersion < 4) {
+      try {
+        await db.execute("ALTER TABLE user_profile ADD COLUMN current_lesson TEXT DEFAULT 'animals'");
+      } catch (e) {
+        // ignore if column exists
+      }
+      try {
+        await db.execute("ALTER TABLE user_profile ADD COLUMN is_onboarding_completed INTEGER DEFAULT 0");
+      } catch (e) {
+        // ignore if column exists
+      }
     }
   }
 

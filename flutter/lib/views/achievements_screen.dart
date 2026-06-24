@@ -299,7 +299,7 @@ class _AchievementsScreenState extends State<AchievementsScreen> {
           ),
           const SizedBox(height: 20),
           Row(
-            mainAxisAlignment: MainAxisAlignment.between,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 'Кубки: ${_unlockedCount} из ${_achievementsState.length}',
@@ -429,7 +429,7 @@ class _AchievementsScreenState extends State<AchievementsScreen> {
                       
                       // Progress representation
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.between,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
                             isCompleted ? 'Выполнено! 🎉' : 'В процессе',

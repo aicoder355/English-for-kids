@@ -11,6 +11,8 @@ class UserProfile {
   final int dailyStreakCount;
   final int lastActiveTimestamp; // millisecondEpoch for offline calendar calc
   final String parentalPin;
+  final String currentLesson;
+  final int isOnboardingCompleted; // 1 = completed, 0 = not
 
   UserProfile({
     this.id,
@@ -23,6 +25,8 @@ class UserProfile {
     this.dailyStreakCount = 1,
     required this.lastActiveTimestamp,
     this.parentalPin = '1234',
+    this.currentLesson = 'animals',
+    this.isOnboardingCompleted = 0,
   });
 
   /// Factory constructors for SQLite conversion.
@@ -38,6 +42,8 @@ class UserProfile {
       dailyStreakCount: json['daily_streak_count'] as int,
       lastActiveTimestamp: json['last_active_timestamp'] as int,
       parentalPin: json['four_digit_pin'] as String? ?? '1234',
+      currentLesson: json['current_lesson'] as String? ?? 'animals',
+      isOnboardingCompleted: json['is_onboarding_completed'] as int? ?? 0,
     );
   }
 
@@ -54,6 +60,8 @@ class UserProfile {
       'daily_streak_count': dailyStreakCount,
       'last_active_timestamp': lastActiveTimestamp,
       'four_digit_pin': parentalPin,
+      'current_lesson': currentLesson,
+      'is_onboarding_completed': isOnboardingCompleted,
     };
   }
 
@@ -69,6 +77,8 @@ class UserProfile {
     int? dailyStreakCount,
     int? lastActiveTimestamp,
     String? parentalPin,
+    String? currentLesson,
+    int? isOnboardingCompleted,
   }) {
     return UserProfile(
       id: id ?? this.id,
@@ -81,6 +91,8 @@ class UserProfile {
       dailyStreakCount: dailyStreakCount ?? this.dailyStreakCount,
       lastActiveTimestamp: lastActiveTimestamp ?? this.lastActiveTimestamp,
       parentalPin: parentalPin ?? this.parentalPin,
+      currentLesson: currentLesson ?? this.currentLesson,
+      isOnboardingCompleted: isOnboardingCompleted ?? this.isOnboardingCompleted,
     );
   }
 }

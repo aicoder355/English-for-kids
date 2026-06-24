@@ -487,7 +487,7 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
                     style: const TextStyle(
                       fontSize: 36,
                       fontWeight: FontWeight.bold,
-                      color: Colors.emeraldAccent,
+                      color: Colors.greenAccent,
                     ),
                   ),
                   if (card.exampleSentenceEn != null && card.exampleSentenceEn!.isNotEmpty) ...[
@@ -529,13 +529,13 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     decoration: BoxDecoration(
-                      color: Colors.emeraldAccent.withOpacity(0.1),
+                      color: Colors.greenAccent.withOpacity(0.1),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text(
                       'Отличная работа! 👍',
                       style: TextStyle(
-                        color: Colors.emeraldAccent,
+                        color: Colors.greenAccent,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

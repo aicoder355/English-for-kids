@@ -82,7 +82,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             title: const Text(
               "Мой Профиль",
               style: TextStyle(
-                fontWeight: FontWeight.extrabold,
+                fontWeight: FontWeight.w800,
                 color: Colors.white,
                 letterSpacing: 0.5,
               ),
@@ -90,7 +90,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             centerTitle: true,
             actions: [
               IconButton(
-                icon: const Icon(Icons.settings, color: Colors.slate300),
+                icon: const Icon(Icons.settings, color: Colors.blueGrey),
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
@@ -258,7 +258,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             username,
             style: const TextStyle(
               fontSize: 22,
-              fontWeight: FontWeight.extrabold,
+              fontWeight: FontWeight.w800,
               color: Colors.white,
               letterSpacing: -0.5,
             ),
@@ -277,7 +277,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           
           // XP interactive linear tracker
           Row(
-            mainAxisAlignment: MainAxisAlignment.between,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text(
                 "Очки опыта (XP)",
@@ -453,7 +453,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 style: TextStyle(
                   color: valueColor,
                   fontSize: 20,
-                  fontWeight: FontWeight.extrabold,
+                  fontWeight: FontWeight.w800,
                   letterSpacing: -0.5,
                 ),
               ),
@@ -477,7 +477,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.between,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
                 children: [
@@ -522,7 +522,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           
           // Row of week checkmarks
           Row(
-            mainAxisAlignment: MainAxisAlignment.between,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: List.generate(7, (index) {
               final bool isActive = weeklyStreakDays[index];
               final String label = weekDayLabels[index];
@@ -581,7 +581,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Row(
-          mainAxisAlignment: MainAxisAlignment.between,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             _buildSectionHeader("НАГРАДЫ И БЕЙДЖИ"),
             GestureDetector(

@@ -75,7 +75,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
           IconButton(
             icon: Icon(
               isAlertsEnabled ? Icons.notifications_active : Icons.notifications_off,
-              color: isAlertsEnabled ? const Color(0xFF38BDF8) : Colors.slate500,
+              color: isAlertsEnabled ? const Color(0xFF38BDF8) : Colors.blueGrey,
             ),
             onPressed: () {
               setState(() {
@@ -137,7 +137,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
       ),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.between,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
@@ -162,7 +162,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
                   ),
                   Text(
                     selectedChild,
-                    style: const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.extrabold),
+                    style: const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w800),
                   ),
                 ],
               ),
@@ -279,7 +279,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
                 style: TextStyle(
                   color: color,
                   fontSize: 15,
-                  fontWeight: FontWeight.extrabold,
+                  fontWeight: FontWeight.w800,
                   letterSpacing: -0.2,
                 ),
               ),
@@ -310,7 +310,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.between,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -324,7 +324,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
                     children: [
                       Text(
                         "${totalPeriodMins.round()} мин",
-                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.extrabold, color: Colors.white),
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
                       ),
                       const SizedBox(width: 8),
                       Text(
@@ -364,7 +364,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
                           style: TextStyle(
                             color: isSelected ? const Color(0xFF0F172A) : const Color(0xFF94A3B8),
                             fontSize: 9,
-                            fontWeight: isSelected ? FontWeight.extrabold : FontWeight.normal,
+                            fontWeight: isSelected ? FontWeight.w800 : FontWeight.normal,
                           ),
                         ),
                       ),
@@ -409,7 +409,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
     }
 
     return Row(
-      mainAxisAlignment: MainAxisAlignment.between,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: labels.map((lbl) => Text(
         lbl,
         style: const TextStyle(fontSize: 8, color: Color(0xFF475569), fontWeight: FontWeight.bold, fontFamily: 'monospace'),
@@ -451,7 +451,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
     return Column(
       children: [
         Row(
-          mainAxisAlignment: MainAxisAlignment.between,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(label, style: const TextStyle(color: Color(0xFFE2E8F0), fontSize: 11, fontWeight: FontWeight.bold)),
             Text(textVal, style: TextStyle(color: barColor, fontSize: 10, fontWeight: FontWeight.bold)),
@@ -514,7 +514,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
 
           // Daily sliding limit
           Row(
-            mainAxisAlignment: MainAxisAlignment.between,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text(
                 "Дневное игровое время:",
@@ -541,7 +541,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
           ),
           
           Row(
-            mainAxisAlignment: MainAxisAlignment.between,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text("Автоматическая блокировка", style: TextStyle(color: Color(0xFF94A3B8), fontSize: 10)),
               Text(

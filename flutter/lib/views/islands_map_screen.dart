@@ -72,7 +72,7 @@ class IslandsMapScreen extends StatelessWidget {
       case 'family':
         return Colors.purpleAccent;
       case 'nature':
-        return Colors.emerald;
+        return Colors.green;
       case 'numbers':
         return Colors.blueAccent;
       case 'school':
@@ -284,7 +284,7 @@ class IslandsMapScreen extends StatelessWidget {
                                 'Уровень ${profile.currentLevel}',
                                 style: const TextStyle(
                                   fontSize: 10,
-                                  color: Colors.white50,
+                                  color: Colors.white70,
                                 ),
                               ),
                             ],

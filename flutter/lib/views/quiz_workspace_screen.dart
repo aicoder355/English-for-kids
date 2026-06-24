@@ -199,7 +199,7 @@ class _QuizWorkspaceScreenState extends State<QuizWorkspaceScreen> {
                   Text(
                     'Получено: +$rewardXp XP | +$stars 🌟',
                     style: const TextStyle(
-                      color: Colors.emeraldAccent,
+                      color: Colors.greenAccent,
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
                     ),
@@ -364,7 +364,7 @@ class _QuizWorkspaceScreenState extends State<QuizWorkspaceScreen> {
                             style: TextStyle(
                               fontSize: 13,
                               letterSpacing: 1.5,
-                              color: Colors.white50,
+                              color: Colors.white70,
                               fontWeight: FontWeight.bold,
                             ),
                           ),

@@ -35,7 +35,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       'id': 'drake',
       'name': 'Дрейк 🐉',
       'description': 'Веселый карманный дракончик, обожающий сложные квесты.',
-      'color': Colors.emerald,
+      'color': Colors.green,
     },
   ];
 
@@ -310,7 +310,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             'Используется для доступа к родительской панели статистики',
                             style: TextStyle(
                               fontSize: 12,
-                              color: Colors.white50,
+                              color: Colors.white70,
                             ),
                           ),
                           const SizedBox(height: 12),
@@ -373,7 +373,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     child: const Text(
                       'Войти как родитель',
                       style: TextStyle(
-                        color: Colors.white50,
+                        color: Colors.white70,
                         decoration: TextDecoration.underline,
                         fontSize: 14,
                       ),
