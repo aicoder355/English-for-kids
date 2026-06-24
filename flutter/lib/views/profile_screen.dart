@@ -226,7 +226,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               Positioned(
                 bottom: -2,
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 14, py: 3),
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 3),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(colors: [Color(0xFFF59E0B), Color(0xFFD97706)]),
                     borderRadius: BorderRadius.circular(16),
@@ -415,7 +415,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       decoration: BoxDecoration(
         color: cardColor,
         borderRadius: BorderRadius.circular(22),
-        border: Border.all(borderColor, width: 1.2),
+        border: Border.all(color: borderColor, width: 1.2),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 14.0),
       child: Stack(
@@ -491,7 +491,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                   const SizedBox(width: 6),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 6, py: 1.5),
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1.5),
                     decoration: BoxDecoration(
                       color: const Color(0xFFF43F5E).withOpacity(0.15),
                       borderRadius: BorderRadius.circular(6),
