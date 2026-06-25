@@ -1,19 +1,11 @@
 workflows:
   android-release:
     name: Android Release
-
     environment:
-      flutter: "3.35.3"
-
+      flutter: stable
     working_directory: flutter
-
     scripts:
-      - flutter --version
-      - cd android
-      - ./gradlew --version
-      - cd ..
       - flutter pub get
       - flutter build apk --release
-
     artifacts:
       - build/app/outputs/flutter-apk/*.apk
