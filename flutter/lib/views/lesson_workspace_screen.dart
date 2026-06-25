@@ -282,7 +282,7 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.04),
+                  color: Colors.white.withValues(alpha: 0.04),
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(color: Colors.white10),
                 ),
@@ -316,7 +316,7 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
                   // Prev Button
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white.withOpacity(0.05),
+                      backgroundColor: Colors.white.withValues(alpha: 0.05),
                       foregroundColor: Colors.white,
                       side: const BorderSide(color: Colors.white24),
                       shape: RoundedRectangleBorder(
@@ -337,7 +337,7 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
                   // Flip Button Helper
                   IconButton(
                     style: IconButton.styleFrom(
-                      backgroundColor: const Color(0xFF38BDF8).withOpacity(0.12),
+                      backgroundColor: const Color(0xFF38BDF8).withValues(alpha: 0.12),
                       foregroundColor: const Color(0xFF38BDF8),
                       padding: const EdgeInsets.all(16),
                     ),
@@ -389,7 +389,7 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
               width: 120,
               height: 120,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.05),
+                color: Colors.white.withValues(alpha: 0.05),
                 shape: BoxShape.circle,
               ),
               child: const Center(
@@ -425,7 +425,7 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
               // Vocalize Button
               ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF38BDF8).withOpacity(0.2),
+                  backgroundColor: const Color(0xFF38BDF8).withValues(alpha: 0.2),
                   foregroundColor: const Color(0xFF38BDF8),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
@@ -497,7 +497,7 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
                       child: Container(
                         padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.05),
+                          color: Colors.white.withValues(alpha: 0.05),
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: Column(
@@ -529,7 +529,7 @@ class _LessonWorkspaceScreenState extends State<LessonWorkspaceScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     decoration: BoxDecoration(
-                      color: Colors.greenAccent.withOpacity(0.1),
+                      color: Colors.greenAccent.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text(

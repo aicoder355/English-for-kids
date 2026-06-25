@@ -244,9 +244,9 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
   }) {
     return Container(
       decoration: BoxDecoration(
-        color: color.withOpacity(0.06),
+        color: color.withValues(alpha: 0.06),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withOpacity(0.2), width: 1.2),
+        border: Border.all(color: color.withValues(alpha: 0.2), width: 1.2),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       child: Stack(
@@ -384,7 +384,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
               painter: ProgressChartPainter(
                 dataPoints: data,
                 color: const Color(0xFF38BDF8),
-                fillColor: const Color(0xFF38BDF8).withOpacity(0.06),
+                fillColor: const Color(0xFF38BDF8).withValues(alpha: 0.06),
               ),
             ),
           ),
@@ -487,7 +487,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: const Color(0xFF4F46E5).withOpacity(0.3)),
+        border: Border.all(color: const Color(0xFF4F46E5).withValues(alpha: 0.3)),
       ),
       padding: const EdgeInsets.all(18.0),
       child: Column(
@@ -498,7 +498,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
               Container(
                 padding: const EdgeInsets.all(6),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF4F46E5).withOpacity(0.2),
+                  color: const Color(0xFF4F46E5).withValues(alpha: 0.2),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(Icons.security, color: Color(0xFF818CF8), size: 16),
@@ -546,7 +546,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> with Sing
               const Text("Автоматическая блокировка", style: TextStyle(color: Color(0xFF94A3B8), fontSize: 10)),
               Text(
                 "Блокировать при превышении лимита",
-                style: TextStyle(color: const Color(0xFF4DE80).withOpacity(0.5), fontSize: 8, fontStyle: FontStyle.italic),
+                style: TextStyle(color: const Color(0xFF4DE80).withValues(alpha: 0.5), fontSize: 8, fontStyle: FontStyle.italic),
               )
             ],
           )

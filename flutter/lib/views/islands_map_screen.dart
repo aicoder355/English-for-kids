@@ -143,7 +143,7 @@ class IslandsMapScreen extends StatelessWidget {
                     Expanded(
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: color.withOpacity(0.2),
+                          backgroundColor: color.withValues(alpha: 0.2),
                           foregroundColor: color,
                           side: BorderSide(color: color, width: 2),
                           padding: const EdgeInsets.symmetric(vertical: 20),
@@ -171,7 +171,7 @@ class IslandsMapScreen extends StatelessWidget {
                     Expanded(
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blueAccent.withOpacity(0.2),
+                          backgroundColor: Colors.blueAccent.withValues(alpha: 0.2),
                           foregroundColor: Colors.blueAccent,
                           side: const BorderSide(color: Colors.blueAccent, width: 2),
                           padding: const EdgeInsets.symmetric(vertical: 20),
@@ -254,7 +254,7 @@ class IslandsMapScreen extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.05),
+                        color: Colors.white.withValues(alpha: 0.05),
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(color: Colors.white12),
                       ),
@@ -262,7 +262,7 @@ class IslandsMapScreen extends StatelessWidget {
                         children: [
                           CircleAvatar(
                             radius: 16,
-                            backgroundColor: Colors.blueAccent.withOpacity(0.2),
+                            backgroundColor: Colors.blueAccent.withValues(alpha: 0.2),
                             child: Text(
                               buddyEmoji,
                               style: const TextStyle(fontSize: 18),
@@ -299,9 +299,9 @@ class IslandsMapScreen extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                     decoration: BoxDecoration(
-                      color: Colors.orangeAccent.withOpacity(0.12),
+                      color: Colors.orangeAccent.withValues(alpha: 0.12),
                       borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: Colors.orangeAccent.withOpacity(0.3)),
+                      border: Border.all(color: Colors.orangeAccent.withValues(alpha: 0.3)),
                     ),
                     child: Row(
                       children: [
@@ -324,9 +324,9 @@ class IslandsMapScreen extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                     decoration: BoxDecoration(
-                      color: Colors.amber.withOpacity(0.12),
+                      color: Colors.amber.withValues(alpha: 0.12),
                       borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: Colors.amber.withOpacity(0.3)),
+                      border: Border.all(color: Colors.amber.withValues(alpha: 0.3)),
                     ),
                     child: Row(
                       children: [
@@ -398,11 +398,11 @@ class IslandsMapScreen extends StatelessWidget {
                             widthFactor: 0.8,
                             child: Material(
                               elevation: isUnlocked ? 8 : 1,
-                              shadowColor: color.withOpacity(0.3),
+                              shadowColor: color.withValues(alpha: 0.3),
                               borderRadius: BorderRadius.circular(24),
                               color: isUnlocked 
                                   ? const Color(0xFF1E293B) 
-                                  : const Color(0xFF0F172A).withOpacity(0.5),
+                                  : const Color(0xFF0F172A).withValues(alpha: 0.5),
                               child: InkWell(
                                 borderRadius: BorderRadius.circular(24),
                                 onTap: () {
@@ -434,8 +434,8 @@ class IslandsMapScreen extends StatelessWidget {
                                             height: 54,
                                             decoration: BoxDecoration(
                                               color: isUnlocked 
-                                                  ? color.withOpacity(0.15) 
-                                                  : Colors.white.withOpacity(0.05),
+                                                  ? color.withValues(alpha: 0.15) 
+                                                  : Colors.white.withValues(alpha: 0.05),
                                               shape: BoxShape.circle,
                                               border: Border.all(
                                                 color: isUnlocked ? color : Colors.white24,
@@ -457,7 +457,7 @@ class IslandsMapScreen extends StatelessWidget {
                                               width: 54,
                                               height: 54,
                                               decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(0.4),
+                                                color: Colors.black.withValues(alpha: 0.4),
                                                 shape: BoxShape.circle,
                                               ),
                                               child: const Icon(

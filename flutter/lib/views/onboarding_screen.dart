@@ -114,7 +114,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    color: Colors.white.withOpacity(0.05),
+                    color: Colors.white.withValues(alpha: 0.05),
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: Column(
@@ -134,7 +134,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             style: const TextStyle(color: Colors.white, fontSize: 16),
                             decoration: InputDecoration(
                               filled: true,
-                              fillColor: Colors.white.withOpacity(0.05),
+                              fillColor: Colors.white.withValues(alpha: 0.05),
                               hintText: 'Введите имя',
                               hintStyle: const TextStyle(color: Colors.white30),
                               prefixIcon: const Icon(Icons.face, color: Color(0xFF38BDF8)),
@@ -163,7 +163,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    color: Colors.white.withOpacity(0.05),
+                    color: Colors.white.withValues(alpha: 0.05),
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: Column(
@@ -199,7 +199,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    color: Colors.white.withOpacity(0.05),
+                    color: Colors.white.withValues(alpha: 0.05),
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: Column(
@@ -234,7 +234,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   ),
                                   borderRadius: BorderRadius.circular(16),
                                   color: isSelected
-                                      ? (hero['color'] as Color).withOpacity(0.12)
+                                      ? (hero['color'] as Color).withValues(alpha: 0.12)
                                       : Colors.transparent,
                                 ),
                                 child: Row(
@@ -242,7 +242,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                     Container(
                                       padding: const EdgeInsets.all(10),
                                       decoration: BoxDecoration(
-                                        color: (hero['color'] as Color).withOpacity(0.2),
+                                        color: (hero['color'] as Color).withValues(alpha: 0.2),
                                         shape: BoxShape.circle,
                                       ),
                                       child: Text(
@@ -291,7 +291,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    color: Colors.white.withOpacity(0.05),
+                    color: Colors.white.withValues(alpha: 0.05),
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: Column(
@@ -321,7 +321,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             maxLength: 4,
                             decoration: InputDecoration(
                               filled: true,
-                              fillColor: Colors.white.withOpacity(0.05),
+                              fillColor: Colors.white.withValues(alpha: 0.05),
                               hintText: '1234',
                               hintStyle: const TextStyle(color: Colors.white30),
                               prefixIcon: const Icon(Icons.lock, color: Color(0xFF38BDF8)),
@@ -401,7 +401,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 16),
           decoration: BoxDecoration(
-            color: isSelected ? const Color(0xFF38BDF8) : Colors.white.withOpacity(0.05),
+            color: isSelected ? const Color(0xFF38BDF8) : Colors.white.withValues(alpha: 0.05),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
               color: isSelected ? const Color(0xFF0EA5E9) : Colors.white24,

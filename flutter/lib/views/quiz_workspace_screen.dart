@@ -348,7 +348,7 @@ class _QuizWorkspaceScreenState extends State<QuizWorkspaceScreen> {
                         right: 20,
                         child: IconButton(
                           style: IconButton.styleFrom(
-                            backgroundColor: Colors.white.withOpacity(0.05),
+                            backgroundColor: Colors.white.withValues(alpha: 0.05),
                             foregroundColor: Colors.white,
                           ),
                           icon: const Icon(Icons.volume_up, size: 28),
@@ -409,15 +409,15 @@ class _QuizWorkspaceScreenState extends State<QuizWorkspaceScreen> {
 
                     if (_isAnswered) {
                       if (isCorrectOption) {
-                        buttonColor = Colors.green.withOpacity(0.2);
+                        buttonColor = Colors.green.withValues(alpha: 0.2);
                         textColor = Colors.greenAccent;
                         optionIcon = Icons.check_circle;
                       } else if (isSelected) {
-                        buttonColor = Colors.red.withOpacity(0.2);
+                        buttonColor = Colors.red.withValues(alpha: 0.2);
                         textColor = Colors.redAccent;
                         optionIcon = Icons.cancel;
                       } else {
-                        buttonColor = const Color(0xFF1E293B).withOpacity(0.5);
+                        buttonColor = const Color(0xFF1E293B).withValues(alpha: 0.5);
                         textColor = Colors.white38;
                       }
                     }
@@ -469,10 +469,10 @@ class _QuizWorkspaceScreenState extends State<QuizWorkspaceScreen> {
                   padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
                   margin: const EdgeInsets.only(bottom: 16),
                   decoration: BoxDecoration(
-                    color: _isCorrect ? Colors.green.withOpacity(0.12) : Colors.red.withOpacity(0.12),
+                    color: _isCorrect ? Colors.green.withValues(alpha: 0.12) : Colors.red.withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: _isCorrect ? Colors.green.withOpacity(0.3) : Colors.red.withOpacity(0.3),
+                      color: _isCorrect ? Colors.green.withValues(alpha: 0.3) : Colors.red.withValues(alpha: 0.3),
                     ),
                   ),
                   child: Row(

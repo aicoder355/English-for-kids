@@ -165,10 +165,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
       decoration: BoxDecoration(
         color: const Color(0xFF1E293B),
         borderRadius: BorderRadius.circular(28),
-        border: Border.all(color: const Color(0xFF38BDF8).withOpacity(0.15), width: 1.5),
+        border: Border.all(color: const Color(0xFF38BDF8).withValues(alpha: 0.15), width: 1.5),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF38BDF8).withOpacity(0.04),
+            color: const Color(0xFF38BDF8).withValues(alpha: 0.04),
             blurRadius: 20,
             spreadRadius: 2,
           ),
@@ -193,7 +193,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF38BDF8).withOpacity(0.3),
+                      color: const Color(0xFF38BDF8).withValues(alpha: 0.3),
                       blurRadius: 15,
                       spreadRadius: 2,
                     ),
@@ -233,7 +233,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     border: Border.all(color: const Color(0xFFFEF3C7), width: 1.5),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFFD97706).withOpacity(0.4),
+                        color: const Color(0xFFD97706).withValues(alpha: 0.4),
                         blurRadius: 6,
                         spreadRadius: 1,
                       )
@@ -314,7 +314,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xFF38BDF8).withOpacity(0.5),
+                            color: const Color(0xFF38BDF8).withValues(alpha: 0.5),
                             blurRadius: 4,
                             spreadRadius: 1,
                           )
@@ -350,8 +350,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 subtitle: "Active Words",
                 value: "$wordsLearned",
                 emoji: "📚",
-                cardColor: const Color(0xFF0EA5E9).withOpacity(0.12),
-                borderColor: const Color(0xFF0EA5E9).withOpacity(0.35),
+                cardColor: const Color(0xFF0EA5E9).withValues(alpha: 0.12),
+                borderColor: const Color(0xFF0EA5E9).withValues(alpha: 0.35),
                 valueColor: const Color(0xFF38BDF8),
                 width: cardWidth,
               ),
@@ -361,8 +361,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 subtitle: "Gold Stars",
                 value: "$totalStars",
                 emoji: "⭐",
-                cardColor: const Color(0xFFEAB308).withOpacity(0.12),
-                borderColor: const Color(0xFFEAB308).withOpacity(0.35),
+                cardColor: const Color(0xFFEAB308).withValues(alpha: 0.12),
+                borderColor: const Color(0xFFEAB308).withValues(alpha: 0.35),
                 valueColor: const Color(0xFFFACC15),
                 width: cardWidth,
               ),
@@ -376,8 +376,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 subtitle: "Lessons",
                 value: "$lessonsCompleted",
                 emoji: "🎯",
-                cardColor: const Color(0xFF10B981).withOpacity(0.12),
-                borderColor: const Color(0xFF10B981).withOpacity(0.35),
+                cardColor: const Color(0xFF10B981).withValues(alpha: 0.12),
+                borderColor: const Color(0xFF10B981).withValues(alpha: 0.35),
                 valueColor: const Color(0xFF4ADE80),
                 width: cardWidth,
               ),
@@ -387,8 +387,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 subtitle: "Streak Days",
                 value: "$dailyStreak дн.",
                 emoji: "⚡",
-                cardColor: const Color(0xFFF43F5E).withOpacity(0.12),
-                borderColor: const Color(0xFFF43F5E).withOpacity(0.35),
+                cardColor: const Color(0xFFF43F5E).withValues(alpha: 0.12),
+                borderColor: const Color(0xFFF43F5E).withValues(alpha: 0.35),
                 valueColor: const Color(0xFFFB7185),
                 width: cardWidth,
               ),
@@ -470,7 +470,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       decoration: BoxDecoration(
         color: const Color(0xFF1E293B),
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: const Color(0xFFE2E8F0).withOpacity(0.06)),
+        border: Border.all(color: const Color(0xFFE2E8F0).withValues(alpha: 0.06)),
       ),
       padding: const EdgeInsets.all(18.0),
       child: Column(
@@ -493,7 +493,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1.5),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF43F5E).withOpacity(0.15),
+                      color: const Color(0xFFF43F5E).withValues(alpha: 0.15),
                       borderRadius: BorderRadius.circular(6),
                     ),
                     child: Text(
@@ -552,7 +552,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         boxShadow: isActive
                             ? [
                                 BoxShadow(
-                                  color: const Color(0xFFF43F5E).withOpacity(0.3),
+                                  color: const Color(0xFFF43F5E).withValues(alpha: 0.3),
                                   blurRadius: 6,
                                   spreadRadius: 1,
                                 )
@@ -619,7 +619,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
                     color: ach.isUnlocked 
-                        ? ach.color.withOpacity(0.3) 
+                        ? ach.color.withValues(alpha: 0.3) 
                         : const Color(0xFF334155),
                     width: ach.isUnlocked ? 1.5 : 1.0,
                   ),
@@ -634,7 +634,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: ach.isUnlocked 
-                            ? ach.color.withOpacity(0.12) 
+                            ? ach.color.withValues(alpha: 0.12) 
                             : const Color(0xFF0F172A),
                       ),
                       child: Center(
@@ -693,7 +693,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       decoration: BoxDecoration(
         color: const Color(0xFF1E293B),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: const Color(0xFF334155).withOpacity(0.5)),
+        border: Border.all(color: const Color(0xFF334155).withValues(alpha: 0.5)),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0),
       child: Row(
@@ -701,7 +701,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: iconColor.withOpacity(0.1),
+              color: iconColor.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Icon(icon, color: iconColor, size: 16),
